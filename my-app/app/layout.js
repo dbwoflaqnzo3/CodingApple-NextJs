@@ -20,12 +20,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
+    <meta charSet="UTF-8"/>
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       <div className="navbar">
         <Link href="/">홈</Link>
-        <Link href="/list">상품 리스트</Link>
+        <Link href="/list">상품</Link>
+        <Link href="/cartlist">장바구니</Link>
       </div>
         {children}
       </body>

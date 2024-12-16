@@ -1,17 +1,20 @@
+import CartItem from './data.js'
+
+function Banner(props){
+  return <h2>{props.content} 정상 영업합니다</h2>
+}
+
 export default function Cart() {
-    return (
+  let bukket = ['토마토','파스타']
+
+    return ( <>
       <div>
+        <Banner content={'우리가게'}/>
         <h4 className="title">Cart</h4>
-        <div className="cart-item">
-          <p>상품명</p>
-          <p>$40</p>
-          <p>1개</p>
-        </div>
-        <div className="cart-item">
-          <p>상품명</p>
-          <p>$40</p>
-          <p>1개</p>
-        </div>
+        <CartItem item={bukket[0]}/>
+        <CartItem item={bukket[1]}/>
+        
       </div>
+      </>
     )
   } 
