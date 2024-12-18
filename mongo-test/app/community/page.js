@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../community.module.css'; // CSS 모듈 import
 import { connectDB } from '../util/database';
+import Link from 'next/link';
 
 export default async function List() {
 
@@ -10,18 +11,18 @@ export default async function List() {
 
   return (
     <div className={styles.listBg}>
-      <div className={styles.listItem}>
-        <h4>{result[0].title}</h4>
-        <p>{result[0].content}</p>
-      </div>
-      <div className={styles.listItem}>
-        <h4>{result[1].title}</h4>
-        <p>{result[1].content}</p>
-      </div>
-      <div className={styles.listItem}>
-        <h4>글제목</h4>
-        <p>1월 1일</p>
-      </div>
+      {
+        result.map((element,i)=>{
+          return(
+            <div className={styles.listItem} key={i}>
+              <h4>{result[i].title}</h4>
+              <Link href={'/detail/'+result[i]._id.toString()}>링크</Link>
+              <p>{result[i].content}</p>
+            </div>
+          );
+        })
+      }
+
     </div>
   );
 }
