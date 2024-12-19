@@ -1,0 +1,15 @@
+.p_20{
+    padding: 20px
+}
+.p20Input {
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+  }
+.p20Btn {
+    padding: 10px 15px;
+    background: lightgray;
+    border: none;
+    border-radius: 5px;
+} 
