@@ -16,9 +16,11 @@ export default async function List() {
         result.map((element,i)=>{
           return(
             <div className={styles.listItem} key={i}>
-              <h4>{result[i].title}</h4>
-              <Link href={'/detail/'+result[i]._id.toString()}>링크</Link>
-              <DetailLink></DetailLink>
+              
+              <Link href={'/detail/'+result[i]._id.toString()}>
+                <h4>{result[i].title}</h4>
+              </Link>
+              <Link href={'/edit/' + result[i]._id}>수정</Link>
               <p>{result[i].content}</p>
             </div>
           );
