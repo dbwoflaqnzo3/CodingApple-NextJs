@@ -19,7 +19,8 @@ export default async function handler(req , res){
 
         const db = (await connectDB).db('forum');
         let result = await db.collection('post').updateOne({_id: new ObjectId(userContents._id)} , 
-        {$set : { changes }} )
+        {$set : { changes }},
+        { upsert: true }) // 문서가 없으면 새로 생성 
 
         console.log(result)
         return (

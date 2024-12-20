@@ -6,7 +6,18 @@
     padding: 10px;
     display: block;
     margin-bottom: 10px;
+    resize: 'none'
+}
+
+.p21Input {
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    resize: 'none';
+    width: 860px;
   }
+
 .p20Btn {
     padding: 10px 15px;
     background: lightgray;

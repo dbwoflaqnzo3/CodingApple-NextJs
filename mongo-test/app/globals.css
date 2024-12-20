@@ -1,19 +1,44 @@
+body{
+    background-color: rgb(253, 246, 246);
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
 .navbar{
-    background-color: white;
+    background-color: rgb(253, 214, 214);
     padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between; 
 }
 
 .navbar a{
     text-decoration: none;
     color: black;
     margin-right: 20px;
+
 }
 
 .logo{
     font-weight: bold;
+}
+
+.nav_ele{
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.nav_eles{
+    
+    justify-items: end;
 }

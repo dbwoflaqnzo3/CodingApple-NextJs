@@ -25,7 +25,10 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       <div className="navbar">
         <Link href={'/'} className="logo">JJopForum</Link>
-        <Link href={'/list'}>List</Link>
+        <div className="nav_eles">
+        <Link href={'/community'} className="nav_ele">List</Link>
+        <Link href={'/write'} className="nav_ele">Write</Link>
+        </div>
       </div>
         {children}
       </body>
