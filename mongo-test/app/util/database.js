@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb';
 
 // MongoDB Atlas URL (사용자가 제공한 URL)
-const url = 'mongodb+srv://admin:1q2w3e4r%25T@cluster0.qbbcv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const url = DB_URL;
 
 // MongoDB 연결 옵션
 const options = {
